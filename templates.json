@@ -670,6 +670,21 @@
   },
   {
     "type": "stack",
+    "title": "ScyllaDB",
+    "note": "Deploys a 3 node Scylla cluster",
+    "categories": ["database"],
+    "platform": "linux",
+    "logo":"https://www.scylladb.com/wp-content/uploads/mascot_1.png",
+    "repository": {
+      "url": "https://github.com/esatterwhite/templates",
+      "stackfile": "stacks/scylla/docker-compose.yml"
+    },
+    "ports": [
+      "9042/tcp", "9016/tcp"
+    ]
+  },
+  {
+    "type": "stack",
     "title": "OpenFaaS",
     "description": "Serverless functions made simple",
     "note": "Deploys the API gateway and sample functions. You can access the UI on port 8080.",
